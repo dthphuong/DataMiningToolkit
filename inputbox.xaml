@@ -1,0 +1,21 @@
+﻿<Window x:Class="DataMiningToolkit.inputbox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Data Mining Tookit" Height="156.873" Width="385.714" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="img/edit.png">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="21" Margin="10,10,0,0" TextWrapping="Wrap" Text="Please input second Demensional : " VerticalAlignment="Top" Width="358" FontSize="13"/>
+        <TextBox x:Name="txtInp" HorizontalAlignment="Left" Height="23" Margin="10,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="358" TextAlignment="Center"/>
+        <Button x:Name="btnOk" HorizontalAlignment="Left" Height="40" Margin="59,70,0,0" VerticalAlignment="Top" Width="89" Click="btnOk_Click"  >
+            <StackPanel Margin="0,0,0,0" Width="106" >
+                <Image Source="img/ok.png" Margin="0,0,0,0" Height="34" Width="34" HorizontalAlignment="Left"/>
+                <TextBlock Text="OK" Margin="0,-25,0,0" HorizontalAlignment="Center" />
+            </StackPanel>
+        </Button>
+        <Button x:Name="btnCancel" HorizontalAlignment="Left" Height="40" Margin="233,70,0,0" VerticalAlignment="Top" Width="89" Click="btnCancel_Click"  >
+            <StackPanel Margin="0,0,0,0" Width="106" >
+                <Image Source="img/cancel.png" Margin="0,0,0,0" Height="34" Width="34" HorizontalAlignment="Left"/>
+                <TextBlock Text="Cancel" Margin="0,-25,0,0" HorizontalAlignment="Center" />
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>

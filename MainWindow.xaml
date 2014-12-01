@@ -1,0 +1,99 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="DataMiningToolkit.MainWindow"
+        Title="Data Mining Toolkit" Height="627.632" Width="1180.262" Icon="Origins.png" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Background="White"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}" Closing="Window_Closing">
+
+    <Grid>
+        <StatusBar x:Name="statusBar" HorizontalAlignment="Stretch" Height="30" VerticalAlignment="Bottom" Background="#FFD1D1D1">
+            <TextBlock Text="Status : " FontWeight="Bold"/>
+            <TextBlock x:Name="tbStatus" />
+        </StatusBar>
+
+
+        <TabControl HorizontalAlignment="Left" Height="564" VerticalAlignment="Top" Width="1164" FontSize="13">
+            <TabItem Header="Preprocess">
+                <Grid Background="White" Margin="0,1,0,-1">
+                    <Button x:Name="btnOpen" HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="89" Click="btnOpen_Click">
+                        <StackPanel Margin="0,0,0,0" Width="106" >
+                            <Image Source="/img/open.png" Margin="0,0,0,0" Height="34" Width="34" HorizontalAlignment="Left"/>
+                            <TextBlock Text="Open" Margin="0,-25,0,0" HorizontalAlignment="Center" />
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="btnExport" HorizontalAlignment="Left" Height="40" Margin="118,10,0,0" VerticalAlignment="Top" Width="89" Click="btnExport_Click" >
+                        <StackPanel Margin="0,0,0,0" Width="106" >
+                            <Image Source="img/export.png" Margin="0,0,0,0" Height="34" Width="34" HorizontalAlignment="Left"/>
+                            <TextBlock Text="Export" Margin="0,-25,0,0" HorizontalAlignment="Center" />
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="btnSetting" HorizontalAlignment="Left" Height="40" Margin="228,10,0,0" VerticalAlignment="Top" Width="89" Click="btnSetting_Click" >
+                        <StackPanel Margin="0,0,0,0" Width="106" >
+                            <Image Source="img/setting.png" Margin="0,0,0,0" Height="34" Width="34" HorizontalAlignment="Left"/>
+                            <TextBlock Text="Setting" Margin="0,-25,0,0" HorizontalAlignment="Center" />
+                        </StackPanel>
+                    </Button>
+                    <GroupBox Header="Current Dataset" HorizontalAlignment="Left" Height="114" Margin="10,55,0,0" VerticalAlignment="Top" Width="410">
+                        <Grid>
+                            <TextBlock Text="Name : " Margin="25,16,319,55" />
+                            <TextBlock x:Name="tbName" Text="diabetes" Margin="79,16,165,55" />
+                            <TextBlock Text="Instances : " Margin="25,51,303,20" />
+                            <TextBlock x:Name="tbCount" Text="1000" Margin="95,51,235,20" />
+                            <TextBlock Text="Attributes : " Margin="228,51,100,20" />
+                            <TextBlock x:Name="tbAttribute" Text="100" Margin="303,51,25,20" />
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Attributes" HorizontalAlignment="Left" Height="342" Margin="10,174,0,0" VerticalAlignment="Top" Width="410">
+                        <ListView x:Name="lstAttribute" HorizontalAlignment="Left" Height="301" Margin="10,10,0,0" VerticalAlignment="Top" Width="378" ItemsSource="{Binding tblAttribute}" SelectionChanged="lstAttribute_SelectionChanged" >
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn x:Name="colNo" Header="No." Width="50" DisplayMemberBinding="{Binding attNo}"/>
+                                    <GridViewColumn x:Name="colName" Header="Name" Width="150" DisplayMemberBinding="{Binding attName}"/>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </GroupBox>
+                    <GroupBox Header="Selected Attribute" HorizontalAlignment="Left" Height="506" Margin="425,10,0,0" VerticalAlignment="Top" Width="723">
+                        <Grid>
+                            <TextBlock Text="Name : " Margin="202,9,460,448" />
+                            <TextBlock x:Name="tbAtName" Text="diabetes" Margin="251,10,327,447" />
+                            <TextBlock Text="Type : " Margin="398,10,267,448" />
+                            <TextBlock x:Name="tbType" Text="100" Margin="444,10,179,448" />
+                            <ListView x:Name="lstStatistic" HorizontalAlignment="Left" Height="176" Margin="103,34,0,0" VerticalAlignment="Top" Width="493" ItemsSource="{Binding tblStatistic}">
+                                <ListView.View>
+                                    <GridView>
+                                        <GridViewColumn x:Name="colStatistic" Header="Statistic" Width="200" DisplayMemberBinding="{Binding infoName}"/>
+                                        <GridViewColumn x:Name="colValue" Header="Value" Width="200" DisplayMemberBinding="{Binding infoValue}"/>
+                                    </GridView>
+                                </ListView.View>
+                            </ListView>
+                            <Button x:Name="btnFullScreen" HorizontalAlignment="Left" Height="24" Margin="612,216,0,0" VerticalAlignment="Top" Width="89" Click="btnFullScreen_Click"  >
+                                <StackPanel Margin="0,0,0,0" Width="106" >
+                                    <Image Source="img/fullscreenopen.png" Margin="-5,-7,0,0" Height="34" Width="34" HorizontalAlignment="Left"/>
+                                    <TextBlock Text="Zoom++" Margin="0,-25,0,0" HorizontalAlignment="Center" />
+                                </StackPanel>
+                            </Button>
+                            <ComboBox x:Name="cbPlot" HorizontalAlignment="Left" Height="24" Margin="103,216,0,0" VerticalAlignment="Top" Width="493" SelectionChanged="cbPlot_SelectionChanged"/>
+                            <TextBlock HorizontalAlignment="Left" Height="20" Margin="10,220,0,0" TextWrapping="Wrap" Text="Choose plot : " VerticalAlignment="Top" Width="86"/>
+                            <Canvas x:Name="myCanvas" HorizontalAlignment="Left" Height="227" Margin="17,245,0,0" VerticalAlignment="Top" Width="684"/>
+                        </Grid>
+
+                    </GroupBox>
+
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Visualize">
+                <Grid Background="White">
+                    <ComboBox x:Name="cbxD" HorizontalAlignment="Left" Height="23" Margin="201,6,0,0" VerticalAlignment="Top" Width="254"/>
+                    <TextBlock HorizontalAlignment="Left" Height="19" Margin="86,10,0,0" TextWrapping="Wrap" Text="First demensional : " VerticalAlignment="Top" Width="115"/>
+                    <ComboBox x:Name="cbyD" HorizontalAlignment="Left" Height="23" Margin="617,6,0,0" VerticalAlignment="Top" Width="254"/>
+                    <TextBlock HorizontalAlignment="Left" Height="19" Margin="488,10,0,0" TextWrapping="Wrap" Text="Second demensional : " VerticalAlignment="Top" Width="142"/>
+                    <Button x:Name="btnShow" Content="Show" HorizontalAlignment="Left" Height="23" Margin="936,6,0,0" VerticalAlignment="Top" Width="109" Click="btnShow_Click"/>
+                    <Canvas x:Name="vCanvas" HorizontalAlignment="Left" Height="491" Margin="10,34,0,0" VerticalAlignment="Top" Width="1138"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
