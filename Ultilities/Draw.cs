@@ -33,7 +33,7 @@ namespace Ultilities
         #region Adjust
 
         int fontSize = 12;
-        public Brush color = Brushes.Black;
+        public Brush color = Brushes.Blue;
 
 
         #endregion

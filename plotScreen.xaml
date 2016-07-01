@@ -6,8 +6,8 @@
         <Canvas x:Name="pCanvas" HorizontalAlignment="Left" Height="278" VerticalAlignment="Top" Width="541"/>
         <Button x:Name="btnClose" HorizontalAlignment="Left" Height="24" Margin="558,56,0,0" VerticalAlignment="Top" Width="89" Click="btnClose_Click"   >
             <StackPanel Margin="0,0,0,0" Width="106" >
-                <Image Source="img/fullscreenclose.png" Margin="-5,-7,0,0" Height="34" Width="34" HorizontalAlignment="Left"/>
-                <TextBlock Text="Zoom--" Margin="14,-25,0,0" HorizontalAlignment="Center" />
+                <Image Source="img/fullscreenclose.png" Margin="0,0,0,0" Height="22" Width="22" HorizontalAlignment="Left"/>
+                <TextBlock Text="Zoom--" Margin="14,-20,0,0" HorizontalAlignment="Center" />
             </StackPanel>
         </Button>
     </Grid>

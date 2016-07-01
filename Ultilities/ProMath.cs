@@ -105,27 +105,23 @@ namespace Ultilities
             switch (data.dataType)
             {
                 case DatasetType.InpTypes.LibSVM:
+                    for (int i = 0; i < data.Count; ++i)
                     {
-                        for (int i = 0; i < data.Count; ++i)
+                        if (d == 0) d = 1;
+                        if (data.LibSVMData[i][d-1].Index == d)
                         {
-                            if (d == 0) d = 1;
-                            if (data.LibSVMData[i][d-1].Index == d)
-                            {
-                                lstData.Add(data.LibSVMData[i][d-1].Value);
-                            }
-                            else
-                                continue;
+                            lstData.Add(data.LibSVMData[i][d-1].Value);
                         }
+                        else
+                            continue;
                     }
                     break;
                 case DatasetType.InpTypes.CSV:
+                    if (data.IsNumberic[d-1] == 1)
                     {
-                        if (data.IsNumberic[d-1] == 1)
+                        for (int i = 0; i < data.Count; ++i)
                         {
-                            for (int i = 0; i < data.Count; ++i)
-                            {
-                                lstData.Add(double.Parse(data.CSVData[i][d-1]));
-                            }
+                            lstData.Add(double.Parse(data.CSVData[i][d-1]));
                         }
                     }
                     break;

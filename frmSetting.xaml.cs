@@ -20,6 +20,8 @@ namespace DataMiningToolkit
     /// </summary>
     public partial class frmSetting : Window
     {
+        public string plotColor = "Blue";
+        public string lineColor = "Black";
 
         public frmSetting()
         {
@@ -32,7 +34,7 @@ namespace DataMiningToolkit
         {
             Color color = new Color() ; 
 
-            switch (cbLineText.Text)
+            switch (lineColor)
             {
                 case "Black":
                     color= Color.FromArgb(200, 0, 0, 0);
@@ -41,16 +43,16 @@ namespace DataMiningToolkit
                     color= Color.FromArgb(200, 250, 0, 0);
                     break;
                 case "Green":
-                    color= Color.FromArgb(200, 0, 250, 0);
+                    color= Color.FromArgb(200, 103, 189, 72);
                     break;
                 case "Blue":
-                    color= Color.FromArgb(200, 0, 0, 250);
+                    color = Color.FromArgb(200, 0, 177, 205);
                     break;
                 case "Violet":
                     color = Color.FromArgb(200, 64, 0, 128);
                     break;
-                case "Pink":
-                    color = Color.FromArgb(200, 250, 0, 250);
+                case "Orange":
+                    color = Color.FromArgb(200, 253, 183, 23);
                     break;
             }
 
@@ -61,7 +63,7 @@ namespace DataMiningToolkit
         {
             Color color = new Color();
 
-            switch (cbHistogram.Text)
+            switch (plotColor)
             {
                 case "Black":
                     color = Color.FromArgb(200, 0, 0, 0);
@@ -70,16 +72,16 @@ namespace DataMiningToolkit
                     color = Color.FromArgb(200, 250, 0, 0);
                     break;
                 case "Green":
-                    color = Color.FromArgb(200, 0, 250, 0);
+                    color = Color.FromArgb(200, 103, 189, 72);
                     break;
                 case "Blue":
-                    color = Color.FromArgb(200, 0, 0, 250);
+                    color = Color.FromArgb(200, 0, 177, 205);
                     break;
                 case "Violet":
                     color = Color.FromArgb(200, 64, 0, 128);
                     break;
-                case "Pink":
-                    color = Color.FromArgb(200, 250, 0, 250);
+                case "Orange":
+                    color = Color.FromArgb(200, 253, 183, 23);
                     break;
             }
 
@@ -88,6 +90,8 @@ namespace DataMiningToolkit
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            plotColor = cbHistogram.Text;
+            lineColor = cbLineText.Text;
             this.Hide();
         }
     }

@@ -23,7 +23,7 @@
                 <TextBlock  Text="Violet"  FontSize="15" Foreground="Violet"  />
             </ComboBoxItem>
             <ComboBoxItem>
-                <TextBlock  Text="Pink"  FontSize="15" Foreground="Pink"  />
+                <TextBlock  Text="Orange"  FontSize="15" Foreground="Orange"  />
             </ComboBoxItem>
         </ComboBox>
         <TextBlock HorizontalAlignment="Left" Height="24" Margin="10,48,0,0" TextWrapping="Wrap" Text="Plot Color" VerticalAlignment="Top" Width="99" FontSize="13"/>
@@ -44,7 +44,7 @@
                 <TextBlock  Text="Violet"  FontSize="15" Foreground="Violet"  />
             </ComboBoxItem>
             <ComboBoxItem>
-                <TextBlock  Text="Pink"  FontSize="15" Foreground="Pink"  />
+                <TextBlock  Text="Orange"  FontSize="15" Foreground="Orange"  />
             </ComboBoxItem>
         </ComboBox>
         <Button Content="OK" HorizontalAlignment="Left" Height="32" Margin="197,86,0,0" VerticalAlignment="Top" Width="127" Click="Button_Click"/>

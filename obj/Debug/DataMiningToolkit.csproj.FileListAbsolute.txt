@@ -20,3 +20,21 @@ G:\Ha Phuong\Develop Center\6.Project SP\DataMiningToolkit\DataMiningToolkit\obj
 F:\Ha Phuong\Develop Center\6.Project SP\DataMiningToolkit\DataMiningToolkit\bin\Debug\DataMiningToolkit.exe.config
 F:\Ha Phuong\Develop Center\6.Project SP\DataMiningToolkit\DataMiningToolkit\obj\Debug\DataMiningToolkit.exe
 F:\Ha Phuong\Develop Center\6.Project SP\DataMiningToolkit\DataMiningToolkit\obj\Debug\DataMiningToolkit.pdb
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\bin\Debug\DataMiningToolkit.exe.config
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\DataMiningToolkit.exe
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\DataMiningToolkit.pdb
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\bin\Debug\DataMiningToolkit.exe
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\bin\Debug\DataMiningToolkit.pdb
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\frmSetting.baml
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\inputbox.baml
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\MainWindow.baml
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\plotScreen.baml
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\frmSetting.g.cs
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\inputbox.g.cs
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\MainWindow.g.cs
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\plotScreen.g.cs
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\App.g.cs
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\DataMiningToolkit_MarkupCompile.cache
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\DataMiningToolkit.g.resources
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\DataMiningToolkit.Properties.Resources.resources
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\DataMiningToolkit.csproj.GenerateResource.Cache

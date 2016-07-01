@@ -13,6 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -25,7 +26,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.5.5.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -49,7 +49,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Origins.ico</ApplicationIcon>
+    <ApplicationIcon>data_mining.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -140,33 +140,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Origins.ico" />
-    <Resource Include="Origins.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="img\open.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="img\edit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="img\export.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="img\save.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="img\fullscreenclose.png" />
-    <Resource Include="img\fullscreenopen.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="img\cancel.png" />
-    <Resource Include="img\ok.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="img\setting.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
@@ -182,6 +155,30 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="data_mining.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="data_mining.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\cancel.png" />
+    <Resource Include="img\open.png" />
+    <Resource Include="img\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\fullscreenclose.png" />
+    <Resource Include="img\fullscreenopen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\setting.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

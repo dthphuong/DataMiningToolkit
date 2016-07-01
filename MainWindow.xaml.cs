@@ -87,8 +87,8 @@ namespace DataMiningToolkit
                         {
                             dataset.dataType = DatasetType.InpTypes.LibSVM;
                             dataset = Dataset.Read(filename, dataset.dataType);
-
-                            for (int i = 0; i < dataset.MaxIndex; ++i)
+                            
+                            for (int i = 0; i < dataset.MaxIndex-1; ++i)
                             {
                                 myAttItems.Add(new AttItems { attNo = i + 1, attName = "att_" + (i + 1) });
                                 cbxD.Items.Add("att_" + (i + 1));
@@ -239,8 +239,7 @@ namespace DataMiningToolkit
             myAttInfo.Add(new AttInfo { infoName = "Adjusted Variance", infoValue = math.AdjustedVariance().ToString() });
             myAttInfo.Add(new AttInfo { infoName = "Deviation", infoValue = math.Deviation().ToString() });
             myAttInfo.Add(new AttInfo { infoName = "Median", infoValue = math.Median().ToString() });
-            for (int i = 0; i < math.Mod().Count; ++i )
-                myAttInfo.Add(new AttInfo { infoName = "Mod", infoValue = math.Mod()[i].ToString() + "  " });
+            for (int i = 0; i < math.Mod().Count; ++i ) myAttInfo.Add(new AttInfo { infoName = "Mod", infoValue = math.Mod()[i].ToString() + "  " });
             myAttInfo.Add(new AttInfo { infoName = "Min", infoValue = math.DistTable.Min(m => m.Value).ToString() });
             myAttInfo.Add(new AttInfo { infoName = "Max", infoValue = math.DistTable.Max(m=>m.Value).ToString() });
             myAttInfo.Add(new AttInfo { infoName = "Range", infoValue = math.Range().ToString() });

@@ -13,7 +13,7 @@
         </Button>
         <Button x:Name="btnCancel" HorizontalAlignment="Left" Height="40" Margin="233,70,0,0" VerticalAlignment="Top" Width="89" Click="btnCancel_Click"  >
             <StackPanel Margin="0,0,0,0" Width="106" >
-                <Image Source="img/cancel.png" Margin="0,0,0,0" Height="34" Width="34" HorizontalAlignment="Left"/>
+                <Image Source="img/cancel.png" Margin="0,0,0,0" Height="32" Width="32" HorizontalAlignment="Left"/>
                 <TextBlock Text="Cancel" Margin="0,-25,0,0" HorizontalAlignment="Center" />
             </StackPanel>
         </Button>

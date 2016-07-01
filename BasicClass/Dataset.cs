@@ -335,14 +335,14 @@ namespace DataMining
                     {
                         StreamWriter sw = new StreamWriter(path);
 
-                        for (int i = 0; i < MaxIndex; ++i)
+                        for (int i = 0; i < MaxIndex - 1; ++i)
                             sw.Write("att_" + (i + 1) + ",");
                         sw.WriteLine("class");
 
                         for (int i = 0; i < Count; ++i )
                         {
                             sw.Write(LibSVMData[i][0].Value);
-                            for (int j = 1; j < MaxIndex ; ++j)
+                            for (int j = 1; j < MaxIndex - 1 ; ++j)
                                 sw.Write("," + LibSVMData[i][j].Value);
                             sw.WriteLine("," + Label[i]);
                         }
