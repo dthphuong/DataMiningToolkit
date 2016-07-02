@@ -1,5 +1,4 @@
-
-![enter image description here](https://02cf9334-a-62cb3a1a-s-sites.googlegroups.com/site/duongtranhaphuong/database/data_mining.png?attachauth=ANoY7cqyY1GO9ko4Dk8affkWLJH4nYeyBm4S6IT9Ydt6S8drxTMhCOsBf1MfAuWdAGYdu25QQk9xecpQ88s_6TFZMj1n-_RIxteYTyfIhDBkTd3vGllyWjSbKT_9Odz4JQe_E2N6dPsJTi1SkNRT6U6DNfXAQCTt_D-pg3FnDJwXuUPvpTgG3XZXs9_dXWe7b8OMRRvJ-UpDhEf2RbCEgeM-gH4dR7IbWjGZWeij7IWwwqnst8D0blM=&attredirects=0) **DataMining Toolkit** 
+![enter image description here](https://sites.google.com/site/duongtranhaphuong/database/data_mining_64.png) **DataMining Toolkit** 
 ===================
 *Develop by* [**Phuong Duong**](https://phuongduongsite.wordpress.com/about/)
 
