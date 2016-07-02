@@ -1,7 +1,7 @@
 ﻿<Window x:Class="DataMiningToolkit.frmSetting"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="frmSetting" Height="157.172" Width="526.692" Icon="img/setting.png" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Title="Settings" Height="157.172" Width="526.692" Icon="img/setting.png" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
         DataContext="{Binding RelativeSource={RelativeSource Self}}">
 
     <Grid>

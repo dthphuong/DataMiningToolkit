@@ -1,7 +1,7 @@
 ﻿<Window x:Class="DataMiningToolkit.inputbox"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Data Mining Tookit" Height="156.873" Width="385.714" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="img/edit.png">
+        Title="Data Mining Tookit" Height="156.873" Width="385.714" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="data_mining.png">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Height="21" Margin="10,10,0,0" TextWrapping="Wrap" Text="Please input second Demensional : " VerticalAlignment="Top" Width="358" FontSize="13"/>
         <TextBox x:Name="txtInp" HorizontalAlignment="Left" Height="23" Margin="10,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="358" TextAlignment="Center"/>

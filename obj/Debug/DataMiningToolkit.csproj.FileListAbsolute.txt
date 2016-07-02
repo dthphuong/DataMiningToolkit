@@ -21,10 +21,9 @@ F:\Ha Phuong\Develop Center\6.Project SP\DataMiningToolkit\DataMiningToolkit\bin
 F:\Ha Phuong\Develop Center\6.Project SP\DataMiningToolkit\DataMiningToolkit\obj\Debug\DataMiningToolkit.exe
 F:\Ha Phuong\Develop Center\6.Project SP\DataMiningToolkit\DataMiningToolkit\obj\Debug\DataMiningToolkit.pdb
 F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\bin\Debug\DataMiningToolkit.exe.config
-F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\DataMiningToolkit.exe
-F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\DataMiningToolkit.pdb
 F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\bin\Debug\DataMiningToolkit.exe
 F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\bin\Debug\DataMiningToolkit.pdb
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\DataMiningToolkit.csprojResolveAssemblyReference.cache
 F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\frmSetting.baml
 F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\inputbox.baml
 F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\MainWindow.baml
@@ -38,3 +37,5 @@ F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\ob
 F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\DataMiningToolkit.g.resources
 F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\DataMiningToolkit.Properties.Resources.resources
 F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\DataMiningToolkit.csproj.GenerateResource.Cache
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\DataMiningToolkit.exe
+F:\Ha Phuong\Develop Center\0. my Toolkit\DataMiningToolkit\DataMiningToolkit\obj\Debug\DataMiningToolkit.pdb

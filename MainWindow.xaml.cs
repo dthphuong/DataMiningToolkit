@@ -64,7 +64,7 @@ namespace DataMiningToolkit
             OpenFileDialog openDialog = new OpenFileDialog();
             openDialog.Title = "Choose your Dataset";
             openDialog.DefaultExt = ".libsvm";
-            openDialog.Filter = "LibSVM data file (*.libsvm)|*.libsvm|CSV data file (*.csv)|*.csv|Arff data file (*.arff)|*.arff";
+            openDialog.Filter = "LibSVM data file (*.libsvm)|*.libsvm|CSV data file (*.csv)|*.csv";
             openDialog.ShowDialog();
 
             filename = openDialog.FileName;
@@ -117,14 +117,6 @@ namespace DataMiningToolkit
                             tbAttribute.Text = (dataset.Header.Length).ToString();
                         }
                         break;
-                    case ".arff":
-                        {
-                            MessageBox.Show("This feature is Coming soon !", "Data Mining Tookit", MessageBoxButton.OK, MessageBoxImage.Information);
-                            //dataset.dataType = DatasetType.InpTypes.Arff;
-                            //dataset = Dataset.Read(filename, dataset.dataType);
-                        }
-                        break;
-
                 }
 
                 btnExport.IsEnabled = true;
@@ -139,7 +131,6 @@ namespace DataMiningToolkit
             }
 
         }
-
 
         private void btnExport_Click(object sender, RoutedEventArgs e)
         {
@@ -174,10 +165,7 @@ namespace DataMiningToolkit
                     }
                     break;
             }
-            
-            
         }
-
 
         #region myMethod
 
