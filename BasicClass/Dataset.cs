@@ -191,7 +191,7 @@ namespace DataMining
         /// </summary>
         /// <param name="stream">Stream to Read</param>
         /// <returns>The Dataset</returns>
-        private static Dataset Read(Stream stream, DatasetType.InpTypes Type)
+        private async static Task<Dataset> Read(Stream stream, DatasetType.InpTypes Type)
         {
             StreamReader reader = new StreamReader(stream);
             //LibSVM Variable
@@ -207,7 +207,7 @@ namespace DataMining
             {
                 while (!reader.EndOfStream)
                 {
-                    string[] tmp = reader.ReadLine().Split(' ');
+                    string[] tmp = (await reader.ReadLineAsync()).Split(' ');
 
                     for (int i = 0; i < tmp.Length; ++i)
                         if (tmp[i] == "")
@@ -236,11 +236,11 @@ namespace DataMining
             }
             else
             {
-                csvY = reader.ReadLine().Split(',');
+                csvY = (await reader.ReadLineAsync()).Split(',');
 
                 while (!reader.EndOfStream)
                 {
-                    string[] tmp = reader.ReadLine().Split(',');
+                    string[] tmp = (await reader.ReadLineAsync()).Split(',');
                     csvX.Add(tmp);
                 }
 
@@ -280,7 +280,7 @@ namespace DataMining
         /// </summary>
         /// <param name="filename">The path of the file to Read</param>
         /// <returns></returns>
-        public static Dataset Read(string filename, DatasetType.InpTypes filetype)
+        public async static Task<Dataset> Read(string filename, DatasetType.InpTypes filetype)
         {
             FileStream fStream = File.OpenRead(filename);
 
@@ -288,7 +288,7 @@ namespace DataMining
             {
                 try
                 {
-                    return Read(fStream, DatasetType.InpTypes.LibSVM);
+                    return await Read(fStream, DatasetType.InpTypes.LibSVM);
                 }
                 finally
                 {
@@ -299,7 +299,7 @@ namespace DataMining
             {
                 try
                 {
-                    return Read(fStream, DatasetType.InpTypes.CSV);
+                    return await Read(fStream, DatasetType.InpTypes.CSV);
                 }
                 finally
                 {

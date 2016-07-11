@@ -49,7 +49,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>data_mining.ico</ApplicationIcon>
+    <ApplicationIcon>img\data_mining.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -157,10 +157,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="data_mining.png" />
+    <Resource Include="img\data_mining.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="data_mining.ico" />
+    <Resource Include="img\data_mining.ico" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\cancel.png" />

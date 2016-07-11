@@ -56,7 +56,7 @@ namespace DataMiningToolkit
             Initialize();
         }
 
-        private void btnOpen_Click(object sender, RoutedEventArgs e)
+        private async void btnOpen_Click(object sender, RoutedEventArgs e)
         {
             filename = "";
             string fileExt = "";
@@ -86,7 +86,7 @@ namespace DataMiningToolkit
                     case ".libsvm":
                         {
                             dataset.dataType = DatasetType.InpTypes.LibSVM;
-                            dataset = Dataset.Read(filename, dataset.dataType);
+                            dataset = await Dataset.Read(filename, dataset.dataType);
                             
                             for (int i = 0; i < dataset.MaxIndex-1; ++i)
                             {
@@ -104,7 +104,7 @@ namespace DataMiningToolkit
                     case ".csv":
                         {
                             dataset.dataType = DatasetType.InpTypes.CSV;
-                            dataset = Dataset.Read(filename, dataset.dataType);
+                            dataset = await Dataset.Read(filename, dataset.dataType);
 
                             for (int i = 0; i < dataset.Header.Length; ++i)
                             {
@@ -127,7 +127,7 @@ namespace DataMiningToolkit
 
                 math = new ProMath(dataset, 1);
                 math.MakeDistTable();
-                ShowStatus("Reading completed ! Reading time : " + (endTime-startTime).ToString() + " MilliSecond" );
+                ShowStatus("Read completed ! Reading time : " + (endTime-startTime).ToString() + " milliSecond" );
             }
 
         }
@@ -146,9 +146,12 @@ namespace DataMiningToolkit
                         saveDialog.ShowDialog();
                         path = saveDialog.FileName;
 
-                        dataset.Export(DatasetType.InpTypes.CSV, path);
+                        if (path != "")
+                        {
+                            dataset.Export(DatasetType.InpTypes.CSV, path);
 
-                        MessageBox.Show("Export LibSVM to CSV completed", "Data Mining Tookit", MessageBoxButton.OK, MessageBoxImage.Information);
+                            MessageBox.Show("Export LibSVM to CSV completed", "Data Mining Tookit", MessageBoxButton.OK, MessageBoxImage.Information);
+                        }
                     }
                     break;
                 case DatasetType.InpTypes.CSV:
